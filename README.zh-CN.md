@@ -31,7 +31,7 @@
 <p align="center">
   <b>SPONSORED BY</b>
 </p>
-<table align="center" cellspacing="0" cellpadding="0">
+<!-- <table align="center" cellspacing="0" cellpadding="0">
   <tbody>
     <tr>
       <td align="center" valign="middle">
@@ -41,7 +41,7 @@
       </td>
     </tr>
   </tbody>
-</table>
+</table> -->
 
 ## 简介
 
