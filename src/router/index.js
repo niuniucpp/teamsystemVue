@@ -142,10 +142,42 @@ export const constantRoutes = [
     path: '/join',
     component: Layout,
     redirect: '/join/index',
-    hidden: true
+    hidden: false,
+    children: [
+      {
+        path: 'index',
+        component: ()=> import('@/views/join/index'),
+        name: 'Join',
+        meta: {
+          title: '入团申请管理',
+          icon: 'list',
+          noCache: true
+        }
+      }
+    ]
   },
   {
-    path: '/mans'
+    path: '/mans',
+    component: Layout,
+    redirect: '/mans/index',
+    hidden: false,
+    children: [
+      {
+        path: 'index',
+        component: ()=> import('@/views/mans/index'),
+        name: 'Mans',
+        meta: {
+          title: "社团活动管理",
+          icon: 'list',
+          noCache: true
+        }
+      }
+    ]
+  },
+  {
+    path: '/aipages',
+    component: Layout,
+    redirect: '/aipages/index'
   }
   // {
   //   path: '/profile',
