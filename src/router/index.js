@@ -177,22 +177,37 @@ export const constantRoutes = [
   {
     path: '/aipages',
     component: Layout,
-    redirect: '/aipages/index'
+    redirect: '/aipages/index',
+    alwaysShow: true,
+    name: "aipage",
+    meta: {
+      title: 'AiPage',
+      icon: 'lock',
+      routes: ['admin','editor'] // you can set roles in root nav
+    },
+    children: [
+      {
+        path: 'ai-1',
+        name: 'aipage1',
+        component: ()=>import('@/views/aipages/ai-1'),
+        meta: {
+          title: '1 number ai',
+          icon: 'list',
+          noCache: true
+        }
+      },
+      {
+        path: 'ai-2',
+        name: 'aipage2',
+        component: ()=>import('@/views/aipages/ai-2'),
+        meta: {
+          title: '2 number ai',
+          icon: 'list',
+          noCache: true
+        }
+      }
+    ]
   }
-  // {
-  //   path: '/profile',
-  //   component: Layout,
-  //   redirect: '/profile/index',
-  //   hidden: true,
-  //   children: [
-  //     {
-  //       path: 'index',
-  //       component: () => import('@/views/profile/index'),
-  //       name: 'Profile',
-  //       meta: { title: 'Profile', icon: 'user', noCache: true }
-  //     }
-  //   ]
-  // }
 ]
 
 /**
