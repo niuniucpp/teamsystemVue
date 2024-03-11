@@ -3,7 +3,10 @@
         <div class="lang">
         </div>
         <div class="input_AI">
-            <input />
+            <form>
+                <input>
+                
+            </form>
         </div>
     </div>
 </template>
