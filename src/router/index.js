@@ -191,7 +191,7 @@ export const constantRoutes = [
         name: 'aipage1',
         component: ()=>import('@/views/aipages/ai-1'),
         meta: {
-          title: '1 number ai',
+          title: '文心一言',
           icon: 'example',
           noCache: true
         }
@@ -201,7 +201,7 @@ export const constantRoutes = [
         name: 'aipage2',
         component: ()=>import('@/views/aipages/ai-2'),
         meta: {
-          title: '2 number ai',
+          title: '科大讯飞',
           icon: 'example',
           noCache: true
         }
