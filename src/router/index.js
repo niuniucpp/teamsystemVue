@@ -181,7 +181,7 @@ export const constantRoutes = [
     alwaysShow: true,
     name: "aipage",
     meta: {
-      title: 'AiPage',
+      title: 'AI模型辅助',
       icon: 'lock',
       routes: ['admin','editor'] // you can set roles in root nav
     },
@@ -192,7 +192,7 @@ export const constantRoutes = [
         component: ()=>import('@/views/aipages/ai-1'),
         meta: {
           title: '1 number ai',
-          icon: 'list',
+          icon: 'example',
           noCache: true
         }
       },
@@ -202,7 +202,7 @@ export const constantRoutes = [
         component: ()=>import('@/views/aipages/ai-2'),
         meta: {
           title: '2 number ai',
-          icon: 'list',
+          icon: 'example',
           noCache: true
         }
       }
