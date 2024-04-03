@@ -5,10 +5,11 @@
         </div>
         <div class="input_AI">
             <form>
-                <input type="text" style="margin-top: 20px;margin-left: 20px;width: 900px;height: 55px;border-radius: 25px;" placeholder="输入你要问的问题">
-                <div>
+                <input type="text" style="margin-top: 20px;margin-left: 20px;width: 780px;height: 55px;border-radius: 25px;" placeholder="输入你要问的问题">
+                <!-- <div>
                     <svg-icon class="img-send" icon-class="guide" />
-                </div>
+                </div> -->
+                <input type="submit" value="发送" />
             </form>
         </div>
     </div>
