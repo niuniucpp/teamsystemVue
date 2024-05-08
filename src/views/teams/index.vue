@@ -26,7 +26,7 @@
         </template>
       </el-table-column>
 
-      </el-table-column>
+      
       <el-table-column label="社团信息名称" min-width="150px">
         <template slot-scope="{row}">
           <span class="link-type" @click="handleUpdate(row)">{{ row.title }}</span>
@@ -38,7 +38,7 @@
           <span>{{ row.author }}</span>
         </template>
       </el-table-column>
-      <<!-- el-table-column v-if="showReviewer" label="Reviewer" width="110px" align="center">
+      <!-- el-table-column v-if="showReviewer" label="Reviewer" width="110px" align="center">
         <template slot-scope="{row}">
           <span style="color:red;">{{ row.reviewer }}</span>
         </template>
